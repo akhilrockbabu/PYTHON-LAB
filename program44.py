@@ -1,14 +1,16 @@
-'''to find sum of first nwhole number'''
+'''to reverse a string using recursion'''
 
-def sum_of_first(n):
-    if n<=0:
-        return n
+def rev(s):
+    if len(s)==1:
+        return s[0]
     else:
-        return n+sum_of_first(n-1)
-
-n=int(input("enter the number"))
-print(sum_of_first(n-1))
+        return s[-1]+rev(s[:-1])
 
 
-'''enter the number6
-15'''
+s=input("enter a string")
+print(rev(s))
+
+
+
+'''enter a stringAKHIL
+LIHKA'''
