@@ -1,5 +1,6 @@
 '''Generate a list of four digit numbers in a given range with all their digits even and the number is a perfect square. '''
 
+import math
 def sqrt_even_num(n):
     l=[]
     if n<=9999 and n>999:
@@ -13,10 +14,11 @@ def sqrt_even_num(n):
         print('please enter a four digit number')
     return l
 
-import math
+
 n=int(input("enter a four dgitit number"))
 print(sqrt_even_num(n))
 
 
-
+'''enter a four dgitit number9999
+['4624', '8464']'''
     
