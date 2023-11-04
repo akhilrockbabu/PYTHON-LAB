@@ -1,21 +1,19 @@
-'''program to find sum of digits of a number'''
+'''to reverse a string using recursion'''
 
-def sum_of_dgts(n):
-    if n%10==n:
-        return n
+def rev(s):
+    if len(s)==1:
+        return s[0]
     else:
-        return (n%10)+sum_of_dgts(n//10)
-        
+        return s[-1]+rev(s[:-1])
 
 
-n=int(input("enter a number"))
-print(sum_of_dgts(n))
-
-'''enter a number124
-7'''
+s=input("enter a string")
+print(rev(s))
 
 
 
+'''enter a stringAKHIL
+LIHKA'''
 
 
 
