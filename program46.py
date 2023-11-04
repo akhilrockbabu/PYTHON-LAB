@@ -1,4 +1,4 @@
-'''program to fin sum of digits of a number'''
+'''program to find sum of digits of a number'''
 
 def sum_of_dgts(n):
     if n%10==n:
