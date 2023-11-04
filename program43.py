@@ -1,14 +1,14 @@
-'''program to find fibannocci number'''
+'''to find sum of first nwhole number'''
 
-def fibo(n):
-    if n<=1:
+def sum_of_first(n):
+    if n<=0:
         return n
     else:
-        return fibo(n-1)+fibo(n-2)
+        return n+sum_of_first(n-1)
 
-n=int(input("enter a number"))
-print(fibo(n))
+n=int(input("enter the number"))
+print(sum_of_first(n-1))
 
 
-'''enter a number5
-5'''
+'''enter the number6
+15'''
