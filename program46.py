@@ -1,15 +1,21 @@
-'''program to find sum of digits of a number'''
+'''Generate a list of four digit numbers in a given range with all their digits even and the number is a perfect square. '''
 
-def sum_of_dgts(n):
-    if n%10==n:
-        return n
-    else:
-        return (n%10)+sum_of_dgts(n//10)
+
+import math
+n=int(input("enter a four dgitit number"))
+l=[]
+if n<=9999:
+    for i in range(1000,n+1):
+        if math.sqrt(i).is_integer():
+            s=str(i)
+            
+            l.append(i)
+print(l)
+
+
+
+
+
         
-
-
-n=int(input("enter a number"))
-print(sum_of_dgts(n))
-
-'''enter a number124
-7'''
+'''s=str(i)
+if s[0]%2==0 and s[1]%2==0 and s[2]%2==0 and s[3]%2==0 :'''
