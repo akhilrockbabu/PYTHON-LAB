@@ -19,3 +19,5 @@ b2=Book()
 b2.setbook('Alice in Wonderland','Lewis Carrol',456)
 print('book 2:',b2.showbook())
         
+'''book 1: ('harrypotter', 'jk rawling', 165)
+book 2: ('Alice in Wonderland', 'Lewis Carrol', 456)'''
