@@ -10,10 +10,10 @@ insert.writeheader()
 rows=[{'name':'akhil','age':'21','gender':'male'},{'name':'dona','age':'20','gender':'female'}] 
 insert.writerows(rows)
 
-f1=open('prgrm72.csv',mode='r')
+f1=open('prgrm72.csv','r')
 readit=csv.DictReader(f1)
 for lines in readit:
     if readit:
-        print(lines[0],'\t',lines[1],'\t',lines[2])
+        print(lines['name'],'\t',lines['age'],'\t',lines['gender'])
 f1.close()
 f.close()
